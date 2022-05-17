@@ -1,0 +1,152 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato',sans-serif;
+}
+.wrapper{
+    display: flex;
+    /*flex-direction:row*/
+    min-height: 100vh;
+}
+.leftside{
+    width:50%;
+    background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(./OIP.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.leftside{
+    color: #fff;
+
+}
+.lefDesc{
+    color: #fff;
+    font-weight: 700;
+    font-size:18px;
+    margin-top:20px;
+}
+.leftTitle{
+    font-size: 110px;
+}
+.leftBox {
+    width:90%;
+    color: #fff;
+}
+
+.leftMinorDesc{
+  font-weight:700;
+  margin-top:200px;
+  margin-bottom:10px;
+}
+.btn {
+    height: 40px;
+    padding: 0 10px;
+    border-radius:20px;
+    border:none;
+    min-width:90px;
+    color:#fff;
+}
+.btnPrimary{
+    background-color: rgb(76, 76, 253);
+    margin-right: 25px;
+    transition: 0,4s;
+}
+.btnPrimary:hover {
+    background-color: rgb(31, 31, 177);
+}
+.btnSecondary{
+    background-color: aqua;
+}
+.btnSecondary:hover{
+    background-color: rgb(33, 141, 141);
+}
+
+.btnSecondary>i{
+    margin-right:8px;
+}
+
+/* ------------------------------------------------------------- */
+.rightside{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.rihtBox{
+    margin-top:80px;
+}
+.rightTitle{
+    font: size 36px; ;
+}
+.rightDesc{
+    margin:17px 0;
+}
+.rightDesc> a {
+    color: rgb(76, 76, 253);
+    text-decoration: none;
+}
+.rightForm{
+    display: flex;
+    flex-direction:column;
+}
+.field{
+    border:none;
+    border-bottom: 1px solid rgb(64, 64, 64);
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.check{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.chceck > a {
+    color: rgb(180,100, 100);
+    text-decoration: none;
+}
+.btnSubmit{
+    background-color: rgb(33, 217, 67);
+    width: 160px;
+    margin-top: 30px;
+    box-shadow: 0px 0px 15px 1px rgb(92, 207, 92);
+    margin-left: auto;
+}
+/* }1400,1200,1024,992,768,576  */
+@media (max-width:1024px) {
+.leftTitle{
+    color: red;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+@media(max-width:576px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    
+}
+.leftside{
+    width:100%;
+    padding: 25px;;
+}
+.rightbox{
+    margin-top:80px;
+    width: 90%;
+}
+.btn{
+    width:100%;
+    margin-bottom: 12px ;
+}
+@media print{
+    h1 {
+        color: red;
+    }
+}
+
+}
